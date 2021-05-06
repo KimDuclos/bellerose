@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+$roboto: "roboto";
+
+$tablet: 1000px;
+$large-mobile: 800px;
+$size425: 425px;
+
+.footer {
+  .top-section {
+    height: 500px;
+    background-image: url("./assets/footer-pineapple-bg.png");
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding: 2% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    hr {
+      width: 14%;
+      @media (max-width: $size425) {
+        width: 70%;
+      }
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .info {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        input {
+          color: #969393;
+          font-size: 0.4em;
+          font-family: $roboto;
+          border-radius: 4px;
+          font-weight: bold;
+          padding: 0.5% 0 0.5% 0.5%;
+          width: 30%;
+        }
+      }
+      .message {
+        margin: 1% 0 0 0;
+        display: flex;
+        justify-content: center;
+        input {
+          width: 45%;
+          border-radius: 4px;
+          // font-size: .4em;
+          font-family: $roboto;
+          font-weight: bold;
+        }
+        textarea {
+          width: 45%;
+          border-radius: 4px;
+          font-size: 0.434em;
+          font-family: $roboto;
+          font-weight: bold;
+        }
+      }
+      .submit {
+        font-family: $roboto;
+        font-size: 20px;
+        margin: 2% 0 0 0;
+        .button {
+          @media (max-width: $size425) {
+            max-width: 72%;
+          }
+        }
+      }
+    }
+  }
+  .bottom-section {
+    background-color: #7c904a;
+    max-width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 2%;
+    .review-section {
+      width: 20%;
+      margin: 0 0 0 10%;
+      .review-title {
+        font-family: $roboto;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .review {
+        font-family: $roboto;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .reviewer-name {
+        font-family: $roboto;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+  .sitemap-section {
+    text-align: center;
+    .sitemap-title {
+      font-family: $roboto;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .sitemap-list {
+      font-family: $roboto;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .service-contact-section {
+    text-align: center;
+    margin: 1% 10% 0 0;
+    .service-section-title {
+      font-family: $roboto;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .service-areas {
+      font-family: $roboto;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .contact-section {
+    .contact-title {
+      font-family: $roboto;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 14% 0 0 0;
+    }
+    .contact-info {
+      font-family: $roboto;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .footer-bottom {
+    height: auto;
+    background-color: #393939;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .copyright {
+      font-size: 0.5em;
+      margin: auto 0 auto 1%;
+      @media (max-width: $size425) {
+        width: 200%;
+      }
+    }
+    .social-icons {
+      // width: auto;
+      display: flex;
+      justify-content: flex-end;
+      align-content: center;
+      margin: 0.4% 1% 0 5%;
+      @media (max-width: $size425) {
+        margin: 2% 0 0 0;
+      }
+      .icon {
+        height: 60%;
+        width: 5%;
+        margin: 0 1% 0 0;
+        @media (max-width: $size425) {
+          width: 15%;
+        }
+      }
+    }
+  }
+}

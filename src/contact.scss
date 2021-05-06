@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+$roboto: "roboto";
+
+$size1500: 1500px;
+$size1000: 1000px;
+$size800: 800px;
+$size500: 500px;
+
+.top-section {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $size1500) {
+      max-width: 1500;
+    }
+    @media (max-width: $size1000) {
+      max-width: 1000px;
+    }
+    @media (max-width: $size500) {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .contact-tv-room {
+      @media (max-width: $size1000) {
+        display: none;
+      }
+    }
+  .top-green-box {
+    height: 312px;
+    width: 1000px;
+    background-color: #7c904a;
+    color: white;
+    font-family: $roboto;
+    @media (max-width: $size1500) {
+      width: 80%;
+    }
+    @media (max-width: $size800) {
+      width: 100%;
+    }
+    @media (max-width: $size500) {
+      height: auto;
+    }
+    .contact-green-box-title {
+      padding: 5% 2% 0 2%;
+      font-size: 2;
+      @media (max-width: $size1500) {
+        padding: 4% 0 0 2%;
+      }
+      @media (max-width: $size1000) {
+        padding: 4% 0 0 2%;
+      }
+      @media (max-width: $size800) {
+        font-size: 1.5em;
+      }
+      @media (max-width: $size500) {
+        margin: 4% 0 0 0;
+      }
+    }
+    .contact-green-paragraph {
+      padding: 0 2% 0 2%;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      @media (max-width: $size1500) {
+        font-size: 1.2em;
+      }
+      @media (max-width: $size800) {
+        font-size: 0.88em;
+      }
+    }
+  }
+}
+.contact-text {
+    font-family: $roboto;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 4% auto 10% auto;
+    text-align: center;
+    .final-line {
+      margin: 4% 0 8% 0;
+    }
+}
+.bottom-section {
+  margin: 0 0 8% 0;
+  a:link {
+    text-decoration: none;
+  }
+}
+

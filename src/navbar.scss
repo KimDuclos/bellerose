@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+$roboto: "roboto";
+
+$size1000: 1000px;
+$size800: 800px;
+$size500: 500px;
+
+.navbar {
+  width: 100%;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: row;
+  background-color: none;
+  transition: all 0.7s ease-in;
+  text-decoration: none;
+  padding-top: 1.5%;
+  @media (max-width: $size500) {
+    display: none;
+  }
+}
+
+.navigation {
+  align-items: baseline;
+  width: 100%;
+  height: auto;
+  font-family: $roboto;
+  color: #706e6e;
+  font-weight: bold;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: $size800) {
+    font-size: .8em;
+  }
+  @media (max-width: $size500) {
+    display: none;
+  }
+  a:hover {
+    color: rgb(192, 191, 191);
+  }
+  :visited {
+    color: #000000;
+  }
+  ul {
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    @media (max-width: $size1000) {
+      margin: 0 auto;
+      padding: 0 0 1% 0;
+      width: 80%;
+      align-self: center;
+    }
+    @media (max-width: $size800) {
+      margin: 0 auto;
+      padding: 0%;
+      width: 80%;
+      align-self: center;
+    }
+    :link {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+Link {
+  transition: all 2s;
+}
