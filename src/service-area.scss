@@ -22,11 +22,10 @@ $size500: 500px;
     text-align: center;
   }
   .sa-top-green-box {
-    height: 312px;
-    width: 1000px;
     background-color: #7c904a;
     color: white;
     font-family: $roboto;
+    font-size: 1.5em;
     @media (max-width: $size1500) {
       width: 80%;
     }
@@ -61,6 +60,7 @@ $size500: 500px;
   }
   .kitchen-bar {
     width: 30%;
+    height: 30%;
   }
   .tv-room {
     width: 30%;
