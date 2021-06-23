@@ -10,6 +10,7 @@ $size500: 500px;
 .sa-top-section {
   display: flex;
   flex-direction: row;
+  height: 400px;
   @media (max-width: $size1500) {
     max-width: 1500;
   }
@@ -61,11 +62,11 @@ $size500: 500px;
   }
   .kitchen-bar {
     width: 30%;
-    height: 30%;
+    height: 100%;
   }
   .tv-room {
     width: 30%;
-    height: 30%;
+    height: 100%;
     @media (max-width: $size800) {
       display: none;
     }

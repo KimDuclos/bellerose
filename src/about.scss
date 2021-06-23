@@ -10,6 +10,7 @@ $size500: 500px;
 .about-top-section {
     display: flex;
     flex-direction: row;
+    height: 400px;
     @media (max-width: $size1500) {
       max-width: 1500;
     }
@@ -27,8 +28,8 @@ $size500: 500px;
       }
     }
   .about-top-green-box {
-    height: 312px;
-    width: 1000px;
+    height: 100%;
+    width: 55%;
     background-color: #7c904a;
     color: white;
     font-family: $roboto;

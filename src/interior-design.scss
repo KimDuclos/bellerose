@@ -6,10 +6,13 @@ $size1500: 1500px;
 $size1000: 1000px;
 $size800: 800px;
 $size500: 500px;
+$size375: 375px;
 
 .it-top-section {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 400px;
   @media (max-width: $size1000) {
     max-width: 1000px;
   }
@@ -45,8 +48,16 @@ $size500: 500px;
         font-size: 1.15em;
       }
       @media (max-width: $size800) {
-        font-size: .88em;
+        font-size: 0.88em;
       }
+    }
+  }
+  .living-room {
+    @media (max-width: $size1000) {
+      display: none;
+    }
+    @media (max-width: $size800) {
+      display: none;
     }
   }
   .kitchen {

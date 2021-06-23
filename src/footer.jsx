@@ -43,6 +43,7 @@ const Footer = () => {
           </div>
           <div className="submit">
             <Button
+              onclick="location.href=mailto:info@bellerosedesign.com"
               text="SUBMIT"
               style={{
                 backgroundColor: "white",
